@@ -329,6 +329,18 @@ footer h2 {
   left: -4%;
   bottom: 14%;
 }
+.float.b {
+  right: -3%;
+  top: 10%;
+}
+/* Lune 앱 아이콘(이미지) */
+.mini-img {
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  flex: none;
+}
 .mini {
   display: grid;
   place-items: center;
@@ -501,6 +513,11 @@ h2.title {
   width: 39px;
   height: 36px;
 }
+.product-icon.icon-img {
+  display: block;
+  background: #0b0b0e;
+  box-shadow: 0 10px 24px rgba(255, 126, 182, 0.35);
+}
 .product-name h3 {
   margin: 0;
   font-size: 30px;
@@ -563,6 +580,18 @@ h2.title {
 }
 .shot.side {
   margin-bottom: -34px;
+}
+/* Lune: 앱의 달빛 그라데이션(보라 → 분홍 → 살구)과 어두운 화면 테두리 */
+.product.lune {
+  margin-top: 56px;
+}
+.product.lune .product-shots {
+  background: linear-gradient(140deg, #b69cff 0%, #ff7eb6 58%, #ffb38a 112%);
+}
+.product.lune .shot {
+  border-color: #0b0b0e;
+  background: #0b0b0e;
+  box-shadow: 0 -10px 40px rgba(90, 20, 60, 0.28);
 }
 .feats {
   display: grid;
@@ -693,6 +722,17 @@ h2.title {
 .panel .doclist a:hover {
   border-color: var(--ink);
 }
+/* 서비스별 문서 묶음 이름 */
+.panel .doc-label {
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.panel .doc-label + .doclist {
+  margin-top: 0;
+  padding-top: 8px;
+}
 footer {
   background: var(--night);
   color: var(--night-text);
@@ -748,6 +788,9 @@ footer .copy {
   }
   .float.a {
     left: 2%;
+  }
+  .float.b {
+    right: 2%;
   }
   .about,
   .product {
