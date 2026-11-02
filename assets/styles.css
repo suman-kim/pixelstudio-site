@@ -38,18 +38,6 @@
 .c-coral {
   --c: #ff6a55;
 }
-.c-blue-l {
-  --c: #7ea0ff;
-}
-.c-mint-l {
-  --c: #5fe3cb;
-}
-.c-amber-l {
-  --c: #ffc65c;
-}
-.c-coral-l {
-  --c: #ff8a78;
-}
 .eyebrow i b {
   background: var(--c);
 }
@@ -360,10 +348,6 @@ section.block {
 .band {
   background: var(--soft);
 }
-.night {
-  background: var(--night);
-  color: var(--night-text);
-}
 .kicker {
   margin: 0;
   font-size: 13px;
@@ -371,23 +355,11 @@ section.block {
   color: var(--accent);
   letter-spacing: 0.1em;
 }
-.night .kicker {
-  color: #8fa8ff;
-}
 h2.title {
   margin: 10px 0 0;
   font-size: 38px;
   line-height: 1.24;
   letter-spacing: -0.03em;
-}
-.sub {
-  margin: 14px 0 0;
-  font-size: 17px;
-  color: var(--muted);
-  max-width: 36em;
-}
-.night .sub {
-  color: var(--night-muted);
 }
 .headrow {
   display: flex;
@@ -616,54 +588,38 @@ h2.title {
   font-size: 14.5px;
   line-height: 1.6;
 }
-.safety {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 48px;
+/* 서비스 카드 아래 안전 안내: 아이콘 + 한 문단 + 정책 링크. 색은 .c-* 클래스로 */
+.safe-note {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-top: 16px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
 }
-.safe {
-  padding: 26px 24px 28px;
-  border: 1px solid var(--night-line);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.035);
-}
-.safe .ico {
+.safe-note .ico {
+  flex: none;
   width: 44px;
   height: 44px;
   padding: 10px;
   border-radius: 13px;
-  background: rgba(255, 255, 255, 0.07);
+  background: color-mix(in srgb, var(--c) 12%, transparent);
   color: var(--c);
 }
-.safe h3 {
-  margin: 20px 0 0;
-  font-size: 18.5px;
-  letter-spacing: -0.01em;
-  line-height: 1.4;
+.safe-note b {
+  display: block;
+  font-size: 16px;
 }
-.safe p {
-  margin: 8px 0 0;
-  color: var(--night-muted);
-  font-size: 15px;
+.safe-note p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14.5px;
   line-height: 1.7;
 }
-.more {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 28px;
-}
-.more a {
-  padding: 10px 16px;
-  border: 1px solid var(--night-line);
-  border-radius: 999px;
-  font-size: 14px;
-  text-decoration: none;
-  color: var(--night-text);
-}
-.more a:hover {
-  border-color: #5a6274;
+.safe-note .links {
+  margin-top: 14px;
 }
 .support {
   display: grid;
@@ -802,8 +758,7 @@ footer .copy {
   .about h2.title {
     font-size: 31px;
   }
-  .feats,
-  .safety {
+  .feats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .support {
@@ -833,9 +788,12 @@ footer .copy {
 }
 @media (max-width: 560px) {
   .feats,
-  .safety,
   .facts {
     grid-template-columns: 1fr;
+  }
+  .safe-note {
+    flex-direction: column;
+    gap: 12px;
   }
   .facts div:nth-child(odd) {
     padding-right: 0;
