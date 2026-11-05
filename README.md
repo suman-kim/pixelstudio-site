@@ -12,6 +12,8 @@ Link·Lune 앱의 서버·저장소와는 따로 관리합니다(회사 사이�
 | `assets/pixel-field.svg` | 첫 화면의 픽셀 그림 |
 | `assets/shot-*.jpg` | 서비스(Link) 칸의 앱 화면 |
 | `assets/lune-shot-*.jpg`, `assets/lune-icon.png` | 서비스(Lune) 칸의 앱 화면과 앱 아이콘. 앱 화면은 Lune 저장소의 화면 테스트 이미지(`app/test/goldens`)를 480×975로 줄인 것 |
+| `snapmark/privacy.html` | snapmark 앱의 개인정보 처리방침. 서버가 없는 앱이라 이 사이트에 둡니다. Play Console의 개인정보처리방침 URL로 이 주소(`https://pixelstudiohq.com/snapmark/privacy.html`)를 씁니다 |
+| `assets/legal.css` | 약관·정책 문서 페이지의 스타일 |
 | `404.html` | 없는 주소로 들어왔을 때 |
 
 ## 고칠 때 지킬 것
@@ -28,6 +30,8 @@ Link·Lune 앱의 서버·저장소와는 따로 관리합니다(회사 사이�
   바깥 글꼴·스크립트·그림을 넣으면 표시되지 않습니다. 태그에 `style="…"`을 직접 쓰는 것도 막혀 있으니 클래스를 씁니다.
 - 약관·정책 링크는 각 서비스 서버를 가리킵니다. Link는 `https://api.link.pixelstudiohq.com/api/policies/…`,
   Lune은 `https://api.lune.pixelstudiohq.com/legal/…`입니다.
+- 서버가 없는 앱(snapmark)의 정책은 이 사이트의 `<앱>/` 폴더에 둡니다. 앱 동작(권한, 광고, 백업)이 바뀌면
+  방침도 함께 고치고 시행일을 바꿉니다. snapmark에 배너 광고를 붙이면 3·4·10번 항목을 고쳐야 합니다.
 
 ## 미리 보기
 
