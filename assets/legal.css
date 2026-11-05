@@ -1,0 +1,127 @@
+/* 약관·정책 문서 페이지 (snapmark/privacy.html 등). 색은 회사 사이트(styles.css)와 같다 */
+:root {
+  --bg: #fafaf8;
+  --surface: #f1f0eb;
+  --text: #0d0f14;
+  --body: #2f333b;
+  --muted: #5b606b;
+  --line: #e7e5df;
+  --link: #2f5bea;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d12;
+    --surface: #1a1f2b;
+    --text: #f3f4f6;
+    --body: #d6d9e0;
+    --muted: #a4a9b6;
+    --line: #232836;
+    --link: #8fa8ff;
+    color-scheme: dark;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--body);
+  font: 15px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+a {
+  color: var(--link);
+}
+/* 문서 위의 서비스 이름 */
+.service {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.35;
+  color: var(--text);
+}
+h2 {
+  margin: 36px 0 10px;
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--text);
+}
+.meta {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+/* 한눈에 보기 상자 */
+.notice {
+  margin: 20px 0 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--surface);
+  font-size: 14px;
+}
+.notice p {
+  margin: 4px 0;
+}
+article {
+  margin-top: 24px;
+}
+article p,
+article li {
+  margin: 8px 0;
+}
+article ul {
+  padding-left: 22px;
+}
+strong {
+  color: var(--text);
+}
+/* 좁은 폰에서는 표만 옆으로 밀어 본다 */
+.table {
+  overflow-x: auto;
+  margin: 12px 0;
+}
+table {
+  border-collapse: collapse;
+  min-width: 100%;
+  font-size: 14px;
+  line-height: 1.6;
+}
+th,
+td {
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--surface);
+  color: var(--text);
+  white-space: nowrap;
+}
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+footer p {
+  margin: 4px 0;
+}
