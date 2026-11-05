@@ -125,3 +125,10 @@ footer {
 footer p {
   margin: 4px 0;
 }
+/* 약관의 조항 안 번호 목록 */
+article ol {
+  padding-left: 22px;
+}
+article ol ul {
+  margin: 4px 0;
+}

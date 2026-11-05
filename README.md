@@ -13,6 +13,7 @@ Link·Lune 앱의 서버·저장소와는 따로 관리합니다(회사 사이�
 | `assets/shot-*.jpg` | 서비스(Link) 칸의 앱 화면 |
 | `assets/lune-shot-*.jpg`, `assets/lune-icon.png` | 서비스(Lune) 칸의 앱 화면과 앱 아이콘. 앱 화면은 Lune 저장소의 화면 테스트 이미지(`app/test/goldens`)를 480×975로 줄인 것 |
 | `snapmark/privacy.html` | snapmark 앱의 개인정보 처리방침. 서버가 없는 앱이라 이 사이트에 둡니다. Play Console의 개인정보처리방침 URL로 이 주소(`https://pixelstudiohq.com/snapmark/privacy.html`)를 씁니다 |
+| `snapmark/terms.html` | snapmark 앱의 서비스 이용약관. Play Console의 판매자 상태 화면에 서비스 약관 URL(`https://pixelstudiohq.com/snapmark/terms.html`)로 씁니다 |
 | `assets/legal.css` | 약관·정책 문서 페이지의 스타일 |
 | `404.html` | 없는 주소로 들어왔을 때 |
 
