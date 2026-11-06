@@ -321,6 +321,10 @@ footer h2 {
   right: -3%;
   top: 10%;
 }
+.float.c {
+  right: 8%;
+  bottom: -4%;
+}
 /* Lune 앱 아이콘(이미지) */
 .mini-img {
   display: block;
@@ -341,6 +345,16 @@ footer h2 {
 .mini .lmark {
   width: 25px;
   height: 23px;
+}
+/* snapmark 앱 아이콘: 노란 바탕(#FFE24A) 위 책갈피. 그림(.smark)은 아이콘 칸을 꽉 채운다 */
+.mini.snap,
+.product-icon.snap {
+  background: #ffe24a;
+}
+.smark {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 section.block {
   padding: 96px 0;
@@ -621,6 +635,21 @@ h2.title {
 .safe-note .links {
   margin-top: 14px;
 }
+/* snapmark 서비스 칸: 앱의 강조색 노랑과 어두운 화면(#0C0C0D) 테두리 */
+.product.snapmark {
+  margin-top: 56px;
+}
+.product-icon.snap {
+  box-shadow: 0 10px 24px rgba(240, 190, 0, 0.4);
+}
+.product.snapmark .product-shots {
+  background: linear-gradient(140deg, #fff3a8 0%, #ffe24a 52%, #ffbd4a 115%);
+}
+.product.snapmark .shot {
+  border-color: #0c0c0d;
+  background: #0c0c0d;
+  box-shadow: 0 -10px 40px rgba(90, 60, 0, 0.26);
+}
 .support {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -747,6 +776,9 @@ footer .copy {
   }
   .float.b {
     right: 2%;
+  }
+  .float.c {
+    right: 6%;
   }
   .about,
   .product {
