@@ -579,6 +579,18 @@ h2.title {
   background: #0b0b0e;
   box-shadow: 0 -10px 40px rgba(90, 20, 60, 0.28);
 }
+/* 사이퍼즈 메타: 앱 아이콘과 같은 파랑 그라데이션, 밝은 화면에 맞춘 진한 테두리 */
+.product.cyphers {
+  margin-top: 56px;
+}
+.product.cyphers .product-shots {
+  background: linear-gradient(140deg, #4f8dff 0%, #2f6fec 55%, #3d4fe0 110%);
+}
+.product.cyphers .shot {
+  border-color: #111827;
+  background: #111827;
+  box-shadow: 0 -10px 40px rgba(20, 40, 120, 0.3);
+}
 .feats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
