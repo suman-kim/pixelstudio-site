@@ -12,6 +12,7 @@ Link·Lune 앱의 서버·저장소와는 따로 관리합니다(회사 사이�
 | `assets/pixel-field.svg` | 첫 화면의 픽셀 그림 |
 | `assets/shot-*.jpg` | 서비스(Link) 칸의 앱 화면 |
 | `assets/lune-shot-*.jpg`, `assets/lune-icon.png` | 서비스(Lune) 칸의 앱 화면과 앱 아이콘. 앱 화면은 Lune 저장소의 화면 테스트 이미지(`app/test/goldens`)를 480×975로 줄인 것 |
+| `assets/snapmark-shot-*.jpg` | 서비스(snapmark) 칸의 앱 화면. url-bookmark 저장소의 스토어 스크린샷(`design/store/phone-1·2·3`, 1080×1920)에서 폰 화면 부분(가로 194~892, 세로 465~1920)만 잘라 480×1001로 줄인 것. 아이콘은 그림 파일 없이 `index.html`에 SVG로 넣었습니다 |
 | `snapmark/privacy.html` | snapmark 앱의 개인정보 처리방침. 서버가 없는 앱이라 이 사이트에 둡니다. Play Console의 개인정보처리방침 URL로 이 주소(`https://pixelstudiohq.com/snapmark/privacy.html`)를 씁니다 |
 | `snapmark/terms.html` | snapmark 앱의 서비스 이용약관. Play Console의 판매자 상태 화면에 서비스 약관 URL(`https://pixelstudiohq.com/snapmark/terms.html`)로 씁니다 |
 | `assets/legal.css` | 약관·정책 문서 페이지의 스타일 |
@@ -20,9 +21,11 @@ Link·Lune 앱의 서버·저장소와는 따로 관리합니다(회사 사이�
 ## 고칠 때 지킬 것
 
 - **회사 컨셉은 '모바일 앱 스튜디오', 슬로건은 "세상을 조금 더 편하게, 이롭게"입니다.** 매칭 플랫폼·연결 서비스
-  회사로 소개하지 않습니다. 앱은 지금 Link·Lune 두 개를 보여 주며, 새 앱(AI 채팅·가계북·snapMark 등)은 나중에 추가합니다.
-- **회사의 사이트입니다.** Link 앱의 보라색·말풍선 로고와 Lune 앱의 아이콘·달빛 그라데이션(보라 → 분홍 → 살구)은
-  '서비스' 칸과 첫 화면의 서비스 배지 안에서만 씁니다.
+  회사로 소개하지 않습니다. 앱은 지금 Link·Lune·snapmark를 보여 주며, 새 앱(AI 채팅·가계북 등)은 나중에 추가합니다.
+- **snapmark는 Google Play 정식(프로덕션) 출시 전이라 '출시 준비 중'을 붙여 두었습니다.** 출시하면 서비스 칸 이름 옆
+  (`북마크 앱 · 출시 준비 중`)과 회사 소개의 운영 중인 앱(`snapmark(출시 준비 중)`)에서 지웁니다.
+- **회사의 사이트입니다.** Link 앱의 보라색·말풍선 로고, Lune 앱의 아이콘·달빛 그라데이션(보라 → 분홍 → 살구),
+  snapmark 앱의 노란색(#FFE24A)·책갈피 아이콘은 '서비스' 칸과 첫 화면의 서비스 배지 안에서만 씁니다.
 - **외주 포트폴리오처럼 읽히는 구성을 넣지 않습니다** — 하는 일(기획·디자인·개발), 작업 과정, 쓰는 기술, 제휴 문의 같은 것.
 - **회사 정보에는 상호·대표자·사업자등록번호·통신판매업 신고번호·이메일만 적습니다.** 주소와 전화번호는 넣지 않습니다
   (전체 사업자 정보는 Link·Lune 각 서비스의 약관 및 정책 페이지에 있습니다).
